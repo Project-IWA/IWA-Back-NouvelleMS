@@ -49,8 +49,13 @@ public class Nouvelle {
         this.contenu = contenu;
     }
 
+    // Setters
     public void setDatePublication(Date datePublication) {
-        this.datePublication = datePublication;
+        if (datePublication == null) {
+            this.datePublication = new Date(); // Date actuelle si aucune date n'est fournie
+        } else {
+            this.datePublication = datePublication;
+        }
     }
 
     public void setAuteurId(String auteurId) {
@@ -59,13 +64,14 @@ public class Nouvelle {
 
     // Constructors
     public Nouvelle() {
+        this.datePublication = new Date(); // Initialise à la date actuelle
     }
 
     public Nouvelle(String id, String titre, String contenu, Date datePublication, String auteurId) {
         this.id = id;
         this.titre = titre;
         this.contenu = contenu;
-        this.datePublication = datePublication;
+        this.datePublication = (datePublication != null) ? datePublication : new Date();
         this.auteurId = auteurId;
     }
 
