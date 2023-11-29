@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  nouvelles-app:
+    build: .
+    ports:
+      - "8087:8080"
+    environment:
+      SPRING_DATA_MONGODB_URI: "mongodb+srv://tmarwane2000:xh53YVZwkSPGpSfY@clustertest.i97sx5z.mongodb.net/MS_Nouvelles?retryWrites=true&w=majority"
+
+networks:
+  default:
+    external:
+      name: my-network
