@@ -36,11 +36,11 @@ Le microservice de gestion des recruteurs du backend du projet IWA.
     - 🛠 Dans le répertoire du microservice, exécutez les commandes suivantes pour construire l'application :
 
         ```bash
-          mvn clean package -DskipTests
+          mvn clean package
         ```
       --
       ```bash
-        mvn install package -DskipTests
+        mvn install package
         ```
 
     - 📦 Ces commandes génèrent le fichier JAR nécessaire pour le microservice tout en évitant les tests unitaires.
@@ -55,7 +55,6 @@ Le microservice de gestion des recruteurs du backend du projet IWA.
 ## **⚠️ Notes Importantes**
 
 - 🚀 Assurez-vous de démarrer Docker Compose avant de lancer le microservice.
-- 🛑 L'utilisation de **`DskipTests`** dans les commandes Maven est essentielle pour éviter des tests de connexion prématurés à la base de données.
 
 ---
 
