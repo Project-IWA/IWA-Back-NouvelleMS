@@ -1,5 +1,5 @@
-# IWA-Back-RecrutementsMS
-Le microservice de gestion des recruteurs du backend du projet IWA.
+# IWA-Back-NouvellesMS
+Le microservice de gestion des nouvelles du backend du projet IWA.
 
 # **🚀 Guide d'Installation du Microservice**
 
